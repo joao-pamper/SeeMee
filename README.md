@@ -2,14 +2,17 @@
 
 SeeMee is a tool to schedule hangouts with friends!
 
-## How to run locally
+## How to run
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+To run locally without debugger on:
 
 ```bash
-pip install foobar
+flask --app main run 
 ```
-
+To run locally with debugger on:
+```bash
+flask --app main run --debug
+```
 ## Usage
 
 ```python

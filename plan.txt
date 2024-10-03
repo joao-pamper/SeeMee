@@ -4,4 +4,6 @@ Functions of backend
     - vote for event or against it with email validation
     - if vote is above certain number of people then post on calendar of emails that sgned up for the event
 
-    
+
+TO-DO:
+I have defined most functions, now set up the database and then implement the functions
