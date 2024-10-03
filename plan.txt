@@ -1,0 +1,7 @@
+Functions of backend
+    - store group planner
+    - add new event to planner
+    - vote for event or against it with email validation
+    - if vote is above certain number of people then post on calendar of emails that sgned up for the event
+
+    
