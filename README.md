@@ -1,8 +1,8 @@
-# Foobar
+# SeeMee
 
-Foobar is a Python library for dealing with word pluralization.
+SeeMee is a tool to use to schedule hangouts with friends!
 
-## Installation
+## How to run locally
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
