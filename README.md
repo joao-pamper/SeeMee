@@ -1,6 +1,6 @@
 # SeeMee
 
-SeeMee is a tool to use to schedule hangouts with friends!
+SeeMee is a tool to schedule hangouts with friends!
 
 ## How to run locally
 
