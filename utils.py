@@ -33,3 +33,9 @@ def publish_event_calendar(event_emails, event_date, event_name, event_descripti
     """
     Post event on google calendar of registered emails.
     """
+
+
+def modify_event_calendar():
+    """
+    Modify calendar event once more people join the event.
+    """
