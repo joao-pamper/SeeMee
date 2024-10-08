@@ -13,15 +13,15 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
 
-# Create the tables before the first request
-@app.before_first_request
-def create_tables():
-    db.create_all()
+# # Create the tables before the first request
+# @app.before_first_request
+# def create_tables():
+#     db.create_all()
 
 
 @app.route("/")
 def landing_page():
-    return render_template("landing.html")
+    return render_template("home.html")
 
 
 @app.route("/planner/<int:planner_id>")

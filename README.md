@@ -2,6 +2,9 @@
 
 SeeMee is a tool to schedule hangouts with friends!
 
+Link to what front-end will kind of look like:
+https://excalidraw.com/#json=by9MpSCg_vLY_iD-N5qGV,cPOlUHBYXkGMhHZUMJrwYQ
+
 ## How to run
 
 To run locally without debugger on:
