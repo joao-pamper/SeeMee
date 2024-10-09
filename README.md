@@ -12,9 +12,13 @@ To run locally without debugger on:
 ```bash
 flask --app main run 
 ```
-To run locally with debugger on:
+To run locally with debugger on to automatically reload if code changes and show debugger in browser:
 ```bash
 flask --app main run --debug
+```
+To run publicly
+```bash
+flask --app main run  --host=0.0.0.0
 ```
 ## Usage
 

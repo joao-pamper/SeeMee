@@ -19,29 +19,37 @@ db = SQLAlchemy(app)
 #     db.create_all()
 
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def landing_page():
     return render_template("home.html")
 
 
-@app.route("/planner/<int:planner_id>")
+@app.route("/planner/<int:planner_id>", methods=["GET"])
 def planner_page(planner_id):
     return render_template("planner.html")
 
 
-@app.get("/api/planner/<int:planner_id>")
+# we can pass variables to this render_template function
+
+
+@app.route("/api/planner/<int:planner_id>", methods=["GET"])
 def get_planner_data(planner_id):
     response, status_code = Get_planner_data(planner_id)
     return response, status_code
 
 
-@app.post("/api/event/")
+@app.route("/api/event/", methods=["GET", "POST"])
 def create_event():
-    response, status_code = Create_event(request.json)
+    response, status_code = Create_event(
+        # request.json,
+        request.form["event_name"],
+        request.form["author"],
+        request.form["planner_id"],
+    )
     return response, status_code
 
 
-@app.post("/api/vote/")
+@app.route("/api/vote/", methods=["GET", "POST"])
 def create_vote():
     response, status_code = Create_vote(request.json)
     return response, status_code
